@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Oswald&family=Quicksand:wght@500&display=swap');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Oswald', sans-serif;
+}
+
+header{
+    display: inline;
+}
+
+header.navbar-container {
+    background-color: #d0c8bd;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: flex-start;
+    padding-block: 1rem;
+    position: sticky;
+    top: 0;
+}
+
+header.navbar-container .nav-list ul {
+    padding-left: 3;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: black;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+    background-color: #dc892b;
+    color: white;
+}
+
+main .title-container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: flex-start;
+    height: 100vh;
+}
+
+main .title-container .title-image{
+    display: flex;
+    flex: 1;
+    margin-left: 5rem;
+}
+
+main .title-container .title{
+    text-align: center;
+    flex: 1;
+    margin : auto;
+    padding-right: 50px;
+}
+
+main .title-container .title h1{
+    font-size: 4rem;
+}
+
+article .news-container{
+    height: 100vh;
+    background-color:#F8F0E5 ;
+}
+
