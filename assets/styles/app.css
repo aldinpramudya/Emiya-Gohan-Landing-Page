@@ -81,3 +81,40 @@ article .news-container{
     background-color:#F8F0E5 ;
 }
 
+article .section-title{
+    padding-left: 5rem ;
+    padding-top: 1rem;
+}
+
+article .news-box-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+
+
+article .news-box{
+    background-color: white;
+    height: 150px;
+    max-width: 1200px;
+    width: 800px;
+    margin: auto;
+    border-radius: 5px ;
+    box-shadow: 0 4px 8px 0 #666666;
+}
+
+article .news-content{
+    padding-left: 1rem;
+}
+
+article .news-content h2{
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+article .news-content h4{
+    color: #dc892b;
+}
+
+
+
