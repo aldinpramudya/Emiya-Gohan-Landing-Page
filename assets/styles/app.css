@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Oswald&family=Quicksand:wght@500&display=swap');
 
-*, *::before, *::after{
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -11,7 +13,7 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
-header{
+header {
     display: inline;
 }
 
@@ -52,69 +54,122 @@ header.navbar-container .nav-list li:hover a {
     color: white;
 }
 
-main .title-container{
+main .title-container {
     display: flex;
     flex-direction: row-reverse;
     align-content: flex-start;
     height: 100vh;
 }
 
-main .title-container .title-image{
+main .title-container .title-image {
     display: flex;
     flex: 1;
     margin-left: 5rem;
 }
 
-main .title-container .title{
+main .title-container .title {
     text-align: center;
     flex: 1;
-    margin : auto;
+    margin: auto;
     padding-right: 50px;
 }
 
-main .title-container .title h1{
+main .title-container .title h1 {
     font-size: 4rem;
 }
 
-article .news-container{
+article .news-container {
     height: 100vh;
-    background-color:#F8F0E5 ;
+    background-color: #F8F0E5;
 }
 
-article .section-title{
-    padding-left: 5rem ;
+article .news-container .section-title {
+    padding-left: 5rem;
     padding-top: 1rem;
 }
 
-article .news-box-container{
+article .news-box-container {
     display: flex;
     flex-direction: column;
     row-gap: 3rem;
 }
 
 
-article .news-box{
+article .news-box {
     background-color: white;
     height: 150px;
     max-width: 1200px;
     width: 800px;
     margin: auto;
-    border-radius: 5px ;
+    border-radius: 5px;
     box-shadow: 0 4px 8px 0 #666666;
 }
 
-article .news-content{
+article .news-content {
     padding-left: 1rem;
 }
 
-article .news-content h2{
+article .news-content h2 {
     font-weight: normal;
     letter-spacing: 3px;
 }
 
-article .news-content h4{
+article .news-content h4 {
     color: #dc892b;
 }
 
+article .episode-container {
+    height: 100vh;
+    background-color: #EADBC8;
+}
 
+article .episode-container .section-title {
+    padding-left: 5rem;
+    padding-top: 1rem;
+}
 
+article .box-episodes-container {
+    margin: 60px;
+}
+
+article .box-episodes {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+article .box-episodes img {
+    width: 250px;
+    height: auto;
+}
+
+article .music-container {
+    height: 100vh;
+    background-color: #F8F0E5;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+}
+
+article .music-container .music-opening {
+    display: flex;
+}
+
+article .music-container .music-opening .opening-title{
+    margin-left: 10rem;
+    padding-top: 100px;
+}
+
+article .music-container .music-ending {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+article .music-container .music-ending .ending-title{
+    margin-right: 10rem;
+    padding-top: 100px;
+}
