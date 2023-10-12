@@ -143,8 +143,9 @@ article .box-episodes {
 
 article .box-episodes img {
     width: 250px;
-    height: auto;
+    display: block;
 }
+
 
 article .music-container {
     height: 100vh;
@@ -156,9 +157,10 @@ article .music-container {
 
 article .music-container .music-opening {
     display: flex;
+    padding-left: 5rem;
 }
 
-article .music-container .music-opening .opening-title{
+article .music-container .music-opening .opening-title {
     margin-left: 10rem;
     padding-top: 100px;
 }
@@ -167,9 +169,56 @@ article .music-container .music-ending {
     margin-top: 40px;
     display: flex;
     flex-direction: row-reverse;
+    padding-right: 5rem;
 }
 
-article .music-container .music-ending .ending-title{
+article .music-container .music-ending .ending-title {
     margin-right: 10rem;
     padding-top: 100px;
+}
+
+aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+
+aside .side {
+    height: 100%;
+    display: flex;
+}
+
+aside .side ul {
+    margin: auto;
+    padding: 1.5rem 1rem;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: #dc892b;
+    box-shadow: 0 4px 8px 0 #666666;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+aside .side ul {
+    list-style-type: none;
+}
+
+aside .side li {
+    text-decoration: none;
+    color: rgb(237, 219, 219);
+}
+
+aside .side img {
+    width: 60px;
+}
+
+footer {
+    background-color: #DAC0A3;
+    text-align: center;
+    font-weight: bold;
+
 }
