@@ -26,6 +26,7 @@ header.navbar-container {
     padding-block: 1rem;
     position: sticky;
     top: 0;
+    z-index: 2;
 }
 
 header.navbar-container .nav-list ul {
@@ -119,7 +120,7 @@ article .news-content h4 {
 }
 
 article .episode-container {
-    height: 100vh;
+    height: 900px;
     background-color: #EADBC8;
 }
 
@@ -135,16 +136,42 @@ article .box-episodes-container {
 article .box-episodes {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
     align-content: flex-start;
 }
 
-article .box-episodes img {
-    width: 250px;
-    display: block;
+article .box-episodes a {
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
 }
+
+article .box-episodes a img {
+    width: 230px;
+    height: auto;
+}
+
+article .box-episodes a .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+article .box-episodes a:hover .overlay {
+    opacity: 1; 
+  }
 
 
 article .music-container {
@@ -221,4 +248,34 @@ footer {
     text-align: center;
     font-weight: bold;
 
+}
+
+@media screen and (max-width : 1200px){
+    main .title-container{
+        flex-direction: column;
+        height: 1200px;
+    }
+
+    main .title-container .title{
+        padding-top: 80px;
+        padding-left: 100px;
+    }
+
+    main .title-image{
+        padding-left: 250px;
+    }
+
+    article .episode-container{
+        height: 1100px;
+    }
+
+    article .music-container{
+        height: 800px;
+    }
+}
+
+@media screen and (max-width : 900px){
+    header .navbar-container {
+        max-width : 375px;
+    }
 }
